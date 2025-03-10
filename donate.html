@@ -1,0 +1,152 @@
+<!-- donate.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same header styles -->
+    <style>
+        .donation-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .donation-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .donation-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .amount-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 1.5rem 0;
+        }
+
+        .amount-button {
+            padding: 0.8rem 1.5rem;
+            border: 2px solid #e74c3c;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .amount-button:hover {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .selected-amount {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background: #eee;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .progress {
+            width: 65%;
+            height: 100%;
+            background: #e74c3c;
+            border-radius: 10px;
+        }
+
+        .testimonial-slider {
+            background: #f9f9f9;
+            padding: 3rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+        }
+
+        .payment-methods {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .payment-methods img {
+            width: 50px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Same navigation -->
+    </header>
+
+    <section class="hero" style="background-image: url('https://via.placeholder.com/1920x600')">
+        <h1>Make a Difference</h1>
+        <p>Your support changes lives</p>
+    </section>
+
+    <main class="container">
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <p class="text-center">65% of our $1M goal reached</p>
+
+        <div class="donation-options">
+            <div class="donation-card">
+                <h3>One-Time Gift</h3>
+                <div class="amount-buttons">
+                    <div class="amount-button">$25</div>
+                    <div class="amount-button">$50</div>
+                    <div class="amount-button">$100</div>
+                    <div class="amount-button">$500</div>
+                </div>
+                <form>
+                    <input type="number" placeholder="Custom Amount" class="full-width" required>
+                    <button class="button">Donate Now</button>
+                </form>
+            </div>
+
+            <div class="donation-card">
+                <h3>Monthly Support</h3>
+                <div class="amount-buttons">
+                    <div class="amount-button">$10</div>
+                    <div class="amount-button">$25</div>
+                    <div class="amount-button">$50</div>
+                    <div class="amount-button">$100</div>
+                </div>
+                <form>
+                    <input type="number" placeholder="Custom Amount" class="full-width" required>
+                    <button class="button">Become a Sustainer</button>
+                </form>
+            </div>
+        </div>
+
+        <section class="testimonial-slider">
+            <blockquote>
+                "Seeing the impact of my donations through regular updates makes me proud to support this cause."
+                <cite>- Sarah Johnson, Monthly Donor</cite>
+            </blockquote>
+        </section>
+
+        <div class="payment-methods">
+            <img src="visa.png" alt="Visa">
+            <img src="mastercard.png" alt="Mastercard">
+            <img src="paypal.png" alt="PayPal">
+        </div>
+    </main>
+
+    <footer>
+        <!-- Same footer -->
+    </footer>
+</body>
+</html>

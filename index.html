@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope Foundation | Non-Profit Organization</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://via.placeholder.com/1920x1080');
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding-top: 60px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .mission-section {
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .causes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .cause-card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Home Page -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#home">Hope Foundation</a>
+            <div>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#donate">Donate</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Creating Better Futures for Children</h1>
+            <p>Join us in making a difference today</p>
+            <a href="#donate" class="button">Donate Now</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="mission-section">
+            <h2>Our Mission</h2>
+            <p>To provide education, healthcare, and shelter to underprivileged children worldwide.</p>
+        </section>
+
+        <section class="causes-grid">
+            <div class="cause-card">
+                <h3>Education</h3>
+                <p>Building schools and providing educational materials</p>
+            </div>
+            <div class="cause-card">
+                <h3>Healthcare</h3>
+                <p>Mobile clinics and vaccination programs</p>
+            </div>
+            <div class="cause-card">
+                <h3>Shelter</h3>
+                <p>Safe housing for homeless children</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us: contact@hopefoundation.org | (555) 123-4567</p>
+        <p>123 Charity Street, Compassion City, World</p>
+    </footer>
+</body>
+</html>

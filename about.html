@@ -1,0 +1,144 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same header styles as homepage -->
+    <style>
+        /* Add these new styles */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 3rem auto;
+        }
+
+        .timeline-item {
+            padding: 20px;
+            border-left: 3px solid #e74c3c;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background: #e74c3c;
+            border-radius: 50%;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .team-member {
+            text-align: center;
+            padding: 1rem;
+            background: #f9f9f9;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1rem;
+        }
+
+        .impact-numbers {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            background: #2c3e50;
+            color: white;
+            padding: 3rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+        }
+
+        .impact-item {
+            text-align: center;
+            margin: 1rem;
+        }
+
+        .impact-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Same navigation as homepage -->
+    </header>
+
+    <section class="hero" style="background-image: url('https://via.placeholder.com/1920x600')">
+        <h1>Our Story</h1>
+    </section>
+
+    <main class="container">
+        <div class="impact-numbers">
+            <div class="impact-item">
+                <div class="impact-number">15+</div>
+                <p>Years of Service</p>
+            </div>
+            <div class="impact-item">
+                <div class="impact-number">1M+</div>
+                <p>Lives Impacted</p>
+            </div>
+            <div class="impact-item">
+                <div class="impact-number">50+</div>
+                <p>Countries Reached</p>
+            </div>
+        </div>
+
+        <section class="timeline">
+            <h2>Our Journey</h2>
+            <div class="timeline-item">
+                <h3>2010 - Foundation Established</h3>
+                <p>Started with a small team in Compassion City</p>
+            </div>
+            <div class="timeline-item">
+                <h3>2015 - Global Expansion</h3>
+                <p>Opened offices in 10 countries worldwide</p>
+            </div>
+            <div class="timeline-item">
+                <h3>2023 - 1 Million Children Helped</h3>
+                <p>Reached our major milestone through community support</p>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Team Member">
+                    <h4>John Doe</h4>
+                    <p>Founder & CEO</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <!-- Add more team members -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Same footer as homepage -->
+    </footer>
+</body>
+</html>
